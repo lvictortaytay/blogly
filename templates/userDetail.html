@@ -1,0 +1,20 @@
+{%extends "home.html"%}
+{%block title%} user Info! {%endblock%}
+{%block content%}
+
+<a href="/">home</a>
+
+<div class = "text-center container">
+    
+    <form action = "/editUser/{{user.id}}" method="GET">
+        <div class = "text-center container">
+            <h1 class = "text-center">{{user.first_name}}</h1>
+            <img src = {{user.image_url}}>
+        </div>
+        <button type="submit" class = "btn btn-success editBtn">edit!</button>
+    </form>
+</div>
+    <form action = "/deleteUser/{{user.id}}" method="POST">
+        <button type="submit" class = "btn btn-danger deleteBtn">delete user</button>
+</div>
+{%endblock%}

@@ -1,0 +1,15 @@
+{%extends "home.html"%}
+{%block title%} add User! {%endblock%}
+{%block content%}
+<a href = '/'>home</a>
+<h1 class = "text-center">create a user!</h1>
+<div class = "container">
+<form action = "/createUser" method="POST">
+    <span>first name</span><input class = "form-control" type="text" placeholder="enter first name" name = "firstName"><br>
+    <span>last name</span><input class = "form-control" type="text" placeholder="enter first name" name = "lastName"><br>
+    <span>image url</span><input class = "form-control" type="text" placeholder="enter first name" name = "imageUrl"><br>
+    <button type="submit" class = "btn btn-success">create!</button>
+
+</form>
+</div>
+{%endblock%}

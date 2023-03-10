@@ -1,0 +1,25 @@
+a{
+    text-decoration: none;
+}
+a:hover{
+    transition: .3s;
+    font-size:large;
+    text-shadow: 1px 1px 5px rgb(219, 233, 255);
+
+}
+img{
+    
+    height: 10rem;
+    width: 15rem;
+}
+
+.editBtn{
+    margin-right: 6rem;
+    width: 5rem;
+}
+
+.deleteBtn{
+    margin-top: -4rem;
+    margin-left: 36rem;
+    
+}
