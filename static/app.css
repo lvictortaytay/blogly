@@ -23,3 +23,11 @@ img{
     margin-left: 36rem;
     
 }
+
+.deletePostBtn{
+    margin-left: 4rem;
+    margin-top: -4rem;
+}
+.editPostBtn{
+    margin-left: -4rem;
+}

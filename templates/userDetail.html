@@ -2,7 +2,7 @@
 {%block title%} user Info! {%endblock%}
 {%block content%}
 
-<a href="/">home</a>
+
 
 <div class = "text-center container">
     
@@ -16,5 +16,21 @@
 </div>
     <form action = "/deleteUser/{{user.id}}" method="POST">
         <button type="submit" class = "btn btn-danger deleteBtn">delete user</button>
+        </form>
+</div>
+
+<div>
+    <h1 class = "text-secondary">your post!</h1>
+    <ul>
+      
+    {% for post in posts %}
+    
+    <a href = "/viewPost/{{post.id}}"><li class = " text-primary">{{post.title}}</li></a>
+    {% endfor %}
+   
+    </ul>
+    <form action = "/addPost/{{user.id}}">
+        <button type="submit" class = "btn btn-success">create post!</button>
+    </form>
 </div>
 {%endblock%}

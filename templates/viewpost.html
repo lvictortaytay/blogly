@@ -1,0 +1,16 @@
+{%extends "home.html"%}
+{%block title%} add User! {%endblock%}
+{%block content%}
+
+<div class = "text-center container">
+    <h3 class = "text-primary">{{post.title}}</h3>
+    <p class = "text-secondary">{{post.content}}</p>
+    <i>by {{user.first_name}} {{user.last_name}}</i>
+    <form action = "/editPost/{{post.id}}">
+        <button type="submit" class = "editPostBtn btn btn-primary">edit</button>
+    </form>
+    <form action = "/deletePost/{{post.id}}">
+        <button type="submit" class = "deletePostBtn btn btn-danger">delete</button>
+    </form>
+</div>
+{%endblock%}

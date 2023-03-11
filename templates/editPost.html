@@ -1,0 +1,12 @@
+{%extends "home.html"%}
+{%block title%} edit post! {%endblock%}
+{%block content%}
+<h1 class = "text-center text-primary">edit post</h1>
+<div class = "container">
+    <form action = "/handleEditPost/{{post.id}}" method = "POST">
+        <span>title</span><input class = "form-control" type="text" value="{{post.title}}" name = "title"><br>
+        <span>content</span><input class = "form-control" type="text" value="{{post.content}}" name = "content"><br>
+        <button type="submit" class = "btn btn-success">save changes!</button>
+    </form>
+</div>
+{%endblock%}

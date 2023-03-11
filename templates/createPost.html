@@ -1,0 +1,12 @@
+{%extends "home.html"%}
+{%block title%} add User! {%endblock%}
+{%block content%}
+<h1 class = "text-center">create new post!</h1>
+<div class = "container">
+    <form action = "/handlePost/{{user.id}}" method = "POST">
+        <span>Title</span><input class = "form-control" type="text" name = "title" placeholder="title"><br>
+        <span>Content</span><input class = "form-control" type="text" name = "content" placeholder="content"><br>
+        <button type="submit" class = "btn btn-success">create!</button>
+    </form>
+</div>
+{%endblock%}

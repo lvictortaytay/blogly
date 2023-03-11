@@ -11,7 +11,10 @@
     <title>{%block title %} Blogly! {%endblock%}</title>
 </head>
 <body>
+    <a href="/">home</a>
+
     {%block content %}
+    <div class ="container">
         <h1>Users!</h1>
         {% for user in users %}
         <ul>
@@ -23,6 +26,7 @@
         </form>
         
     {%endblock%}
+    </div>
     
 </body>
 </html>
